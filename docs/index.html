@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>HTA &amp; Associates</title>
+<meta name="description" content="Strategic legal intelligence for media, law and reputation. New York and Los Angeles. Private consultations by appointment.">
+<link rel="canonical" href="https://htaassociates.com/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="HTA &amp; Associates">
+<meta property="og:title" content="HTA &amp; Associates"><meta property="og:description" content="Strategic legal intelligence for media, law and reputation. New York and Los Angeles. Private consultations by appointment."><meta property="og:url" content="https://htaassociates.com/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:image" content="https://htaassociates.com/assets/lady-justice.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#131110">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/hta.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HTA & Associates", "url": "https://htaassociates.com/", "email": "htaandassociates@gmail.com", "logo": "https://htaassociates.com/assets/favicon.svg", "areaServed": ["New York", "Los Angeles"], "description": "Strategic legal intelligence, advocacy and consulting for media, law and reputation. New York and Los Angeles."}</script>
+<style>
+.hero{padding-block:clamp(40px,6vw,80px) 0}
+.hero-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--ink)}
+.words{font-size:clamp(4.6rem,17.5vw,15.5rem);line-height:.84;letter-spacing:-.02em;padding-block:clamp(18px,3vw,36px) clamp(26px,4vw,48px)}
+.words span{display:block}
+.words .r{color:var(--oxblood)}
+.words .r i{font-family:var(--serif);font-weight:500;font-style:italic;letter-spacing:-.01em}
+.hero-base{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:end;padding-block:30px clamp(56px,8vw,96px)}
+.hero-base .acts{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}
+@media (max-width:860px){.hero-base{grid-template-columns:1fr}.hero-base .acts{justify-content:flex-start}}
+
+.pillars{display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+.pillar{display:grid;gap:12px;padding:36px clamp(14px,2vw,28px);border-left:1px solid rgba(238,232,220,.18)}
+.pillar:first-child{border-left:0;padding-left:0}
+.pillar h3{font-size:clamp(1.6rem,2.4vw,2.2rem)}
+.pillar p{color:var(--grey-d);font-size:.95rem}
+@media (max-width:900px){.pillars{grid-template-columns:1fr 1fr}.pillar{border-left:0;padding-left:0;border-top:1px solid rgba(238,232,220,.18)}.pillar:last-child{grid-column:1/-1}}
+
+.promise{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.promise div{display:grid;gap:12px;align-content:start;padding-top:18px;border-top:8px solid var(--oxblood)}
+.promise h3{font-size:clamp(2.2rem,3.6vw,3.2rem)}
+@media (max-width:860px){.promise{grid-template-columns:1fr}}
+
+.start{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:clamp(28px,5vw,80px);align-items:start}
+.chips{display:grid;gap:10px}
+.chip{display:flex;justify-content:space-between;align-items:center;gap:14px;width:100%;text-align:left;background:transparent;color:var(--ivory);border:1px solid rgba(238,232,220,.3);padding:18px 20px;font-family:var(--serif);font-size:1.3rem;cursor:pointer;transition:background .2s,border-color .2s}
+.chip:after{content:"→";font-family:var(--body);opacity:.5}
+.chip:hover{border-color:var(--ivory)}
+.chip[aria-pressed="true"]{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+.chip[aria-pressed="true"]:after{opacity:1}
+.answer{position:sticky;top:110px;background:var(--oxblood);padding:clamp(26px,3.4vw,44px);display:grid;gap:18px}
+.answer h3{font-size:clamp(2rem,3.4vw,2.8rem)}
+.answer ol{margin:0;padding:0;list-style:none;display:grid;gap:14px;counter-reset:m}
+.answer li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:10px;counter-increment:m}
+.answer li:before{content:counter(m);font-family:var(--display);font-size:2rem;line-height:1;color:var(--brass-hi)}
+.answer .btn{justify-self:start;background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+.answer .btn:hover{background:var(--brass-hi);border-color:var(--brass-hi)}
+.answer small{color:rgba(238,232,220,.7);font-size:.82rem}
+@media (max-width:860px){.start{grid-template-columns:1fr}.answer{position:static}}
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,7vw,110px);align-items:start}
+.about dl{margin:0;display:grid}
+.about dl div{display:grid;grid-template-columns:170px minmax(0,1fr);gap:22px;padding-block:22px;border-top:1px solid var(--ink)}
+.about dt{padding-top:5px}
+.about dd{margin:0;font-family:var(--serif);font-size:1.32rem;line-height:1.4}
+@media (max-width:860px){.about{grid-template-columns:1fr}.about dl div{grid-template-columns:1fr;gap:6px}}
+
+.divs{display:grid;border-top:3px solid var(--gold-2)}
+.div{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(20px,5vw,80px);padding-block:clamp(28px,3.4vw,44px);border-bottom:1px solid rgba(238,232,220,.2);transition:padding .3s}
+.div h3{font-size:clamp(2rem,4.2vw,3.6rem)}
+.div .tag{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--brass-hi);margin-bottom:8px}
+.div p:last-child{color:var(--grey-d)}
+.div:hover h3{color:var(--brass-hi)}
+@media (max-width:860px){.div{grid-template-columns:1fr;gap:10px}}
+
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.step{display:grid;gap:14px;align-content:start}
+.step b{font-family:var(--display);font-weight:400;font-size:clamp(5rem,9vw,8rem);line-height:.8;color:var(--oxblood)}
+.step h3{padding-top:14px;border-top:8px solid var(--ink)}
+@media (max-width:860px){.steps{grid-template-columns:1fr}}
+
+.cities{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:var(--ivory)}
+.city{padding:clamp(36px,5vw,64px) clamp(20px,4vw,48px);display:grid;gap:14px;align-content:start}
+.city h3{font-size:clamp(3rem,7vw,6rem)}
+.council{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(24px,5vw,80px);align-items:end;margin-top:clamp(48px,7vw,90px)}
+@media (max-width:860px){.cities,.council{grid-template-columns:1fr}}
+
+.consult{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(36px,6vw,90px)}
+.consult-copy{display:grid;gap:22px;align-content:start}
+.addr{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.addr code{font-family:var(--body);font-weight:600;user-select:all}
+.addr button{background:none;border:1px solid currentColor;color:inherit;font:inherit;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:7px 12px;cursor:pointer}
+form{display:grid;grid-template-columns:1fr 1fr;gap:22px 20px}
+.f{display:grid;gap:6px;min-width:0}
+.f--wide,.check,.form-note,form .btn{grid-column:1/-1}
+label{font-size:.7rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase}
+input,select,textarea{width:100%;background:transparent;border:0;border-bottom:2px solid rgba(238,232,220,.55);color:var(--ivory);font:inherit;font-size:1.15rem;padding:10px 0;border-radius:0}
+select option{color:#131110}
+input:focus,select:focus,textarea:focus{border-bottom-color:var(--brass-hi);outline:none}
+textarea{min-height:110px;resize:vertical}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:.92rem}
+.check input{width:18px;height:18px;margin-top:4px;flex:none;accent-color:var(--brass)}
+.check label{text-transform:none;letter-spacing:0;font-weight:400;font-size:.92rem}
+form .btn{justify-self:start;background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+form .btn:hover{background:var(--brass-hi);border-color:var(--brass-hi)}
+.form-note{min-height:1.4em;color:var(--brass-hi)}
+@media (max-width:860px){.consult,form{grid-template-columns:1fr}}
+</style>
+</head>
+<body class="ink">
+<header class="bar"><div class="wrap">
+<a class="mark" href="index.html">HTA <i>&amp;</i> Associates</a>
+<nav class="nav" aria-label="Main"><a href="index.html#divisions">Divisions</a><a href="lounge.html">Legal Lounge</a><a href="newsroom.html">Newsroom</a><a class="nav-cta" href="index.html#consult">Private Consultation</a></nav>
+</div></header>
+
+<section class="cine">
+  <canvas id="lights" aria-hidden="true"></canvas>
+
+  <div class="wrap">
+  <div class="hero-top label"><span>Strategic legal intelligence</span><span>New York · Los Angeles</span><span>By appointment</span></div>
+  <figure class="lj"><img src="assets/lady-justice.jpg" width="512" height="512" alt="Lady Justice, blindfolded, holding the scales of justice"></figure>
+  <h1 class="words"><span>Media.</span><span>Law.</span><span class="r"><i>Reputation.</i></span></h1>
+  <hr class="heavy-rule">
+  <div class="hero-base">
+    <p class="lede">We fight for people and their rights. A private place to be heard, protected and directed to justice, with discretion and excellence.</p>
+    <div class="acts"><a class="btn" href="#consult">Private Consultation</a><a class="btn btn--line" href="lounge.html">The Legal Lounge</a></div>
+  </div>
+  </div>
+</section>
+<script>
+(function(){
+ var c=document.getElementById('lights'),x=c.getContext('2d'),W,H,mx=-999,my=-999,P=[],S=[],still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function size(){var r=devicePixelRatio||1;W=c.offsetWidth;H=c.offsetHeight;c.width=W*r;c.height=H*r;x.setTransform(r,0,0,r,0,0)}
+ function seed(){
+  P=[];for(var i=0;i<90;i++){var left=Math.random()<.5,u=Math.random();
+   P.push({x:left?u*W*.55:W*.45+u*W*.55,y:Math.random()*H,r:6+Math.random()*Math.random()*46,a:.05+Math.random()*.22,
+   h:left?(Math.random()<.6?'200,215,255':'247,227,166'):(Math.random()<.65?'255,176,92':'247,227,166'),v:.04+Math.random()*.18,t:Math.random()*6.28})}
+  S=[];for(var j=0;j<14;j++)S.push({y:H*(.72+Math.random()*.26),x:Math.random()*W,l:80+Math.random()*260,v:(Math.random()<.5?-1:1)*(.6+Math.random()*1.8),c:Math.random()<.5?'255,90,60':'255,236,200'});
+ }
+ function draw(){
+  x.clearRect(0,0,W,H);
+  var g=x.createRadialGradient(W*.5,H*.35,0,W*.5,H*.35,W*.7);g.addColorStop(0,'rgba(201,162,74,.10)');g.addColorStop(1,'rgba(9,9,11,0)');x.fillStyle=g;x.fillRect(0,0,W,H);
+  x.globalCompositeOperation='lighter';
+  P.forEach(function(p){p.y-=p.v;p.t+=.01;if(p.y<-60){p.y=H+60}
+   var a=p.a*(.75+.25*Math.sin(p.t)),b=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);
+   b.addColorStop(0,'rgba('+p.h+','+a+')');b.addColorStop(.6,'rgba('+p.h+','+a*.35+')');b.addColorStop(1,'rgba('+p.h+',0)');
+   x.fillStyle=b;x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);x.fill()});
+  S.forEach(function(s){s.x+=s.v;if(s.x>W+s.l)s.x=-s.l;if(s.x<-s.l)s.x=W+s.l;
+   var k=x.createLinearGradient(s.x-s.l,0,s.x,0);k.addColorStop(0,'rgba('+s.c+',0)');k.addColorStop(1,'rgba('+s.c+',.55)');
+   x.strokeStyle=k;x.lineWidth=1.4;x.beginPath();x.moveTo(s.x-s.l,s.y);x.lineTo(s.x,s.y);x.stroke()});
+  if(mx>-999){var m=x.createRadialGradient(mx,my,0,mx,my,260);m.addColorStop(0,'rgba(247,227,166,.16)');m.addColorStop(1,'rgba(247,227,166,0)');x.fillStyle=m;x.fillRect(mx-260,my-260,520,520)}
+  x.globalCompositeOperation='source-over';
+  if(!still)requestAnimationFrame(draw);
+ }
+ c.parentNode.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});c.parentNode.addEventListener('pointerleave',function(){mx=my=-999});
+ size();seed();draw();addEventListener('resize',function(){size();seed();if(still)draw()});
+})();
+</script>
+
+<section class="band"><div class="wrap"><div class="pillars"><div class="pillar"><h3>Discretion</h3><p>Your privacy is our priority.</p></div><div class="pillar"><h3>Strategy</h3><p>Intelligence-driven legal support.</p></div><div class="pillar"><h3>Protection</h3><p>Safeguarding your interests.</p></div><div class="pillar"><h3>Preparation</h3><p>Organized. Informed. Always ready.</p></div><div class="pillar"><h3>Results</h3><p>Focused on clarity. Driven by outcomes.</p></div></div></div></section>
+
+<section class="section heard"><div class="wrap">
+  <div class="head"><p class="label">Our promise</p><h2>You will be heard.</h2></div>
+  <div class="promise">
+    <div><h3>Heard.</h3><p class="muted">A private, confidential conversation, behind closed doors. No judgment. Your story, in full.</p></div>
+    <div><h3>Protected.</h3><p class="muted">A plan to stop the damage, secure what is yours and keep your name intact.</p></div>
+    <div><h3>Defended.</h3><p class="muted">People in your corner who advocate for you, and independently licensed attorneys whenever the matter calls for one.</p></div>
+  </div>
+</div></section>
+
+<section class="ink section" id="start"><div class="wrap">
+  <div class="head"><p class="label">Start here</p><h2>What's happening?</h2><p class="lede muted">Choose the closest match. We'll show you how HTA would begin. Nothing you click here is sent anywhere.</p></div>
+  <div class="start">
+    <div class="chips" role="group" aria-label="Situations" id="chips"></div>
+    <div class="answer" aria-live="polite">
+      <p class="label" id="a-div"></p>
+      <h3 id="a-title"></h3>
+      <ol id="a-steps"></ol>
+      <a class="btn" href="#consult" id="a-go">Talk to us about this</a>
+      <small>General information about how we work, not legal advice.</small>
+    </div>
+  </div>
+</div></section>
+
+<section class="section" id="about"><div class="wrap about">
+  <div class="head" style="margin:0"><p class="label">About the house</p><h2>Where law, media and strategy meet.</h2><p class="lede muted">Delivering intelligence, clarity and solutions when it matters most.</p></div>
+  <dl>
+    <div><dt class="label">Who we are</dt><dd>A strategic intelligence firm built at the crossroads of legal, media and reputation advisory.</dd></div>
+    <div><dt class="label">What we do</dt><dd>Elite advisory, crisis support, risk management and actionable intelligence.</dd></div>
+    <div><dt class="label">Who we serve</dt><dd>Creators, executives, entrepreneurs, public figures, media organizations and businesses worldwide.</dd></div>
+    <div><dt class="label">Our approach</dt><dd>Human expertise, sharpened by advanced intelligence systems.</dd></div>
+    <div><dt class="label">Our commitment</dt><dd>Discretion. Integrity. Results.</dd></div>
+  </dl>
+</div></section>
+
+<section class="band section" id="divisions"><div class="wrap">
+  <div class="head"><p class="label">The divisions</p><h2>Six divisions.<br>One mission.</h2></div>
+  <div class="divs"><article class="div"><h3>Legal Strategy &amp; Support</h3><div><p class="tag">Strategic. Proactive. Protective.</p><p>Legal-support strategy, dispute communications and pre-litigation coordination with independent counsel, including cease-and-desist matters, to protect your rights and interests.</p></div></article><article class="div"><h3>Investigations &amp; Intelligence</h3><div><p class="tag">Information. Evidence. Clarity.</p><p>In-depth research, open-source intelligence and strategic analysis that bring the facts into focus before you make a move.</p></div></article><article class="div"><h3>Media &amp; Reputation Protection</h3><div><p class="tag">Your reputation. Our priority.</p><p>We monitor, analyze and respond to media threats, false narratives and online attacks, safeguarding your brand, credibility and legacy.</p></div></article><article class="div"><h3>Advocacy &amp; Creator Protection</h3><div><p class="tag">Voices matter. We stand with you.</p><p>We advocate for creators, entrepreneurs, public figures and individuals facing harassment, defamation or unfair treatment.</p></div></article><article class="div"><h3>Strategic Affairs &amp; Consulting</h3><div><p class="tag">Strategy. Influence. Impact.</p><p>Crisis response planning, risk management and executive advisory for complex situations and high-stakes matters.</p></div></article><article class="div"><h3>Federal Affairs &amp; Government Liaison</h3><div><p class="tag">Access. Clarity. Results.</p><p>Guidance for navigating federal matters, agency processes and policy issues in complex government environments.</p></div></article></div>
+</div></section>
+
+<section class="section" id="process"><div class="wrap">
+  <div class="head"><p class="label">How an engagement works</p><h2>Three moves.</h2></div>
+  <div class="steps">
+    <div class="step"><b>1</b><h3>Private intake</h3><p class="muted">Tell us what is at stake. A short, confidential conversation by appointment.</p></div>
+    <div class="step"><b>2</b><h3>Strategy brief</h3><p class="muted">A clear picture: the facts, the risks, the options and the first moves.</p></div>
+    <div class="step"><b>3</b><h3>Execution</h3><p class="muted">We carry out the plan with you, and bring in independently licensed attorneys whenever a matter calls for one.</p></div>
+  </div>
+</div></section>
+
+<section class="ink section" id="council" style="padding-bottom:0"><div class="wrap">
+  <div class="head"><p class="label">Two cities</p><h2>By appointment only.</h2></div>
+</div>
+  <div class="cities">
+    <div class="city ink"><p class="label">New York</p><h3>The Bowery</h3><p class="muted">NoHo, Manhattan. Private consultations by appointment.</p></div>
+    <div class="city ox"><p class="label">Los Angeles</p><h3>Los Angeles</h3><p>Private consultations by appointment.</p></div>
+  </div>
+</section>
+
+<section class="section"><div class="wrap council">
+  <h2>The Advisory Council.</h2>
+  <p class="lede">HTA works alongside a private council of senior legal and media professionals. Their guidance shapes our strategy. Their names stay private.</p>
+</div></section>
+
+<section class="ox section" id="consult"><div class="wrap consult">
+  <div class="consult-copy">
+    <p class="label">Private consultation</p>
+    <h2>Request an appointment.</h2>
+    <p class="lede">Share the outline of your matter and where you would like to meet. We reply to set a time. Keep sensitive details for the consultation itself.</p>
+    <p class="addr">Or write to <code id="addr">htaandassociates@gmail.com</code> <button type="button" id="copy">Copy</button></p>
+  </div>
+  <form id="intake" novalidate>
+    <div class="f"><label for="nm">Full name</label><input id="nm" name="name" autocomplete="name" required></div>
+    <div class="f"><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" required></div>
+    <div class="f"><label for="ct">City</label><select id="ct" name="city"><option>New York</option><option>Los Angeles</option><option>Either</option></select></div>
+    <div class="f"><label for="ar">Area</label><select id="ar" name="area"><option>Legal Strategy & Support</option><option>Investigations & Intelligence</option><option>Media & Reputation Protection</option><option>Advocacy & Creator Protection</option><option>Strategic Affairs & Consulting</option><option>Federal Affairs & Government Liaison</option><option>Legal Lounge membership</option><option>Press inquiry</option><option>Something else</option></select></div>
+    <div class="f f--wide"><label for="ms">What can we help with?</label><textarea id="ms" name="message" required></textarea></div>
+    <div class="check"><input type="checkbox" id="ok" required><label for="ok">I understand HTA &amp; Associates is not a law firm, this request does not create an attorney-client relationship, and what I send is confidential but not privileged.</label></div>
+    <button class="btn" type="submit">Send request</button>
+    <p class="form-note" id="note" role="status"></p>
+  </form>
+</div></section>
+<script>
+(function(){
+
+  var S=[
+   ["Someone is using my name, face or voice","Media & Reputation Protection","Your likeness is yours.",["Save every use you find: screenshots, links and dates.","We map where it appears and who is behind it.","Takedown requests and platform escalation, with a licensed attorney brought in when rights need enforcing."]],
+   ["A false story or bad press about me","Media & Reputation Protection","Slow down. Then answer well.",["Hold your reply. A rushed response often spreads a story further.","We assess the story, its reach and who is repeating it.","Correction requests and a response strategy, with counsel for any defamation question."]],
+   ["I'm being harassed or attacked online","Advocacy & Creator Protection","You don't have to absorb it.",["Preserve the evidence before anything is deleted.","We report and escalate through each platform's own channels.","A safety and reputation plan, with attorneys or law enforcement where the line has been crossed."]],
+   ["A deal or contract went wrong","Legal Strategy & Support","Get the full picture first.",["Gather the contract, the emails and the payment trail.","We lay out the facts, the leverage and the options.","Dispute communications and pre-litigation coordination with independent counsel."]],
+   ["Someone made an AI copy of me or my work","Investigations & Intelligence","The new frontier, handled.",["Record where the copy lives and how it is being used.","We trace the source and the platforms involved.","Platform policy claims and rights strategy, with counsel on next steps."]],
+   ["A government or agency matter","Federal Affairs & Government Liaison","Navigate it with a map.",["Collect every notice, letter and deadline.","We explain the process and who decides what.","A plan for the road ahead, with licensed professionals where required."]]
+  ];
+  var C=document.getElementById('chips');
+  function show(i){
+    var x=S[i];document.getElementById('a-div').textContent=x[1];document.getElementById('a-title').textContent=x[2];
+    document.getElementById('a-steps').innerHTML=x[3].map(function(t){return '<li><span>'+t+'</span></li>'}).join('');
+    [].forEach.call(C.children,function(b,j){b.setAttribute('aria-pressed',j===i?'true':'false')});
+    document.getElementById('a-go').onclick=function(){var a=document.getElementById('ar');[].forEach.call(a.options,function(o){if(o.text===x[1])a.value=o.value})};
+  }
+  S.forEach(function(x,i){var b=document.createElement('button');b.type='button';b.className='chip';b.textContent=x[0];b.onclick=function(){show(i)};C.appendChild(b)});
+  show(0);
+  var EMAIL="htaandassociates@gmail.com",f=document.getElementById('intake'),n=document.getElementById('note');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(id){return document.getElementById(id).value.trim()};
+    if(!v('nm')||!v('em')||!v('ms')){n.textContent='Please add your name, email and a few lines about your matter.';return}
+    if(!document.getElementById('ok').checked){n.textContent='Please tick the box to confirm you have read the note above.';return}
+    var body='Name: '+v('nm')+'\nEmail: '+v('em')+'\nCity: '+v('ct')+'\nArea: '+v('ar')+'\n\n'+v('ms');
+    location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Private consultation request: '+v('ar'))+'&body='+encodeURIComponent(body);
+    n.textContent='Your email app should open with the request ready to send. If it does not, write to '+EMAIL+'.';
+  });
+  document.getElementById('copy').addEventListener('click',function(){
+    var b=this;try{navigator.clipboard.writeText(EMAIL).then(function(){b.textContent='Copied'},sel)}catch(x){sel()}
+    function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('addr'));var s=getSelection();s.removeAllRanges();s.addRange(r)}
+  });
+})();
+</script>
+<footer class="foot"><div class="wrap">
+<p class="foot-name">HTA <i>&amp;</i> Associates</p>
+<div class="foot-row">
+  <p class="foot-tag">One Team. Two Cities. Limitless Advantage.</p>
+  <nav class="foot-links" aria-label="Footer"><a href="lounge.html">Legal Lounge</a><a href="newsroom.html">Newsroom</a><a href="index.html#consult">Private Consultation</a><a href="legal.html">Privacy &amp; Terms</a></nav>
+</div>
+<p class="disclaimer"><strong>HTA &amp; Associates is a strategic legal intelligence, advocacy and consulting organization.</strong>
+It is not a law firm and does not provide legal representation or legal advice. Legal services are provided only through independently licensed attorneys where applicable.
+Using this site, requesting a consultation or buying a Legal Lounge pass does not create an attorney-client relationship; information you send to HTA is confidential but not protected by attorney-client privilege.</p>
+<p class="disclaimer">© 2026 HTA &amp; Associates · New York · Los Angeles · htaandassociates@gmail.com</p>
+</div></footer>
+</body>
+</html>
