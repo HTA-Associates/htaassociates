@@ -1,0 +1,17 @@
+# Checks that htaassociates.com points at GitHub Pages and the site answers.
+# Runs on demand (Actions tab -> Site check -> Run workflow) or when this file changes.
+name: Site check
+on:
+  workflow_dispatch:
+  push:
+    paths: [".github/workflows/site-check.yml"]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "== A records for htaassociates.com (want 185.199.108-111.153)"; dig +short htaassociates.com A
+          echo "== www (want hta-associates.github.io)"; dig +short www.htaassociates.com CNAME
+          echo "== Nameservers"; dig +short htaassociates.com NS
+          echo "== http://htaassociates.com"; curl -sSI -m 20 http://htaassociates.com | head -5 || true
+          echo "== https://htaassociates.com"; curl -sSI -m 20 https://htaassociates.com | head -5 || true
