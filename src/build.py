@@ -12,7 +12,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap">')
 
 ORG = {"@context": "https://schema.org", "@type": "Organization", "name": "HTA & Associates", "url": SITE, "email": EMAIL,
-       "logo": SITE + "assets/favicon.svg", "areaServed": ["New York", "Los Angeles"],
+       "logo": SITE + "assets/favicon.svg", "areaServed": ["New York", "Los Angeles"], "sameAs": ["https://www.instagram.com/htaassociates/"],
        "description": "Strategic legal intelligence, advocacy and consulting for media, law and reputation. New York and Los Angeles."}
 
 NAV = [("index.html#divisions", "Divisions"), ("lounge.html", "Legal Lounge"), ("newsroom.html", "Newsroom")]
@@ -54,7 +54,7 @@ FOOT = f"""<footer class="foot"><div class="wrap">
 <p class="foot-name">HTA <i>&amp;</i> Associates</p>
 <div class="foot-row">
   <p class="foot-tag">One Team. Two Cities. Limitless Advantage.</p>
-  <nav class="foot-links" aria-label="Footer"><a href="lounge.html">Legal Lounge</a><a href="newsroom.html">Newsroom</a><a href="index.html#consult">Private Consultation</a><a href="legal.html">Privacy &amp; Terms</a></nav>
+  <nav class="foot-links" aria-label="Footer"><a href="lounge.html">Legal Lounge</a><a href="newsroom.html">Newsroom</a><a href="index.html#consult">Private Consultation</a><a href="legal.html">Privacy &amp; Terms</a><a href="https://www.instagram.com/htaassociates/" target="_blank" rel="noopener me">Instagram</a></nav>
 </div>
 <p class="disclaimer"><strong>HTA &amp; Associates is a strategic legal intelligence, advocacy and consulting organization.</strong>
 It is not a law firm and does not provide legal representation or legal advice. Legal services are provided only through independently licensed attorneys where applicable.
