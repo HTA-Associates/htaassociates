@@ -494,6 +494,10 @@ NEWS_CSS = """
 """
 
 HEADLINES = [
+    ("Privacy &amp; media", "SCOTUSblog", "October 2026",
+     "https://scotusblog.com/2026/10/court-appears-likely-to-allow-internet-suit-based-on-decades-old-video-privacy-law-to-go-forward",
+     "Court appears likely to allow internet suit based on decades-old video privacy law to go forward",
+     "Salazar v. Paramount Global: the 1988 Video Privacy Protection Act meets streaming data. A ruling would reach every studio and platform."),
     ("Media rights", "ABC7 New York · AP", "May 4, 2026",
      "https://abc7ny.com/post/ends-us-news-blake-lively-justin-baldoni-end-dispute-settlement-ahead-2026-trial/19038332/",
      "Blake Lively, Justin Baldoni end 'It Ends With Us' dispute in settlement",
