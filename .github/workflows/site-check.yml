@@ -15,3 +15,7 @@ jobs:
           echo "== Nameservers"; dig +short htaassociates.com NS
           echo "== http://htaassociates.com"; curl -sSI -m 20 http://htaassociates.com | head -5 || true
           echo "== https://htaassociates.com"; curl -sSI -m 20 https://htaassociates.com | head -5 || true
+          echo "== prstarpower.com DNS"; dig +short prstarpower.com A; dig +short www.prstarpower.com CNAME; dig +short prstarpower.com NS
+          echo "== prstarpower.com/freda/ headers"; curl -sSIL -m 20 https://prstarpower.com/freda/ | grep -iE "^(HTTP|server|x-github|x-served|via|location|x-powered|cf-ray)" || true
+          echo "== page generator"; curl -sSL -m 20 https://prstarpower.com/freda/ | grep -ioE '<meta name="generator"[^>]*>|wp-content|squarespace|wix|godaddy|webflow|shopify|github' | sort -u | head || true
+
