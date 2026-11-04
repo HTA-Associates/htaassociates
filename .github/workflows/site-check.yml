@@ -17,5 +17,6 @@ jobs:
           echo "== https://htaassociates.com"; curl -sSI -m 20 https://htaassociates.com | head -5 || true
           echo "== prstarpower.com DNS"; dig +short prstarpower.com A; dig +short www.prstarpower.com CNAME; dig +short prstarpower.com NS
           echo "== prstarpower.com/freda/ headers"; curl -sSIL -m 20 https://prstarpower.com/freda/ | grep -iE "^(HTTP|server|x-github|x-served|via|location|x-powered|cf-ray)" || true
+          for u in https://newswirehollywood.com/ https://newswirehollywood.com/sitemap.xml https://newswirehollywood.com/calendar.html https://hollywoodnewsaccess.com/ https://hollywoodnewsaccess.com/sitemap.xml https://gospelnewsaccess.com/ https://gospelnewsaccess.com/sitemap.xml https://gospelnewsaccess.com/charts.html https://prstarpower.com/ https://prstarpower.com/sitemap.xml https://prstarpower.com/freda/; do echo "== $u $(curl -s -o /dev/null -w '%{http_code} %{time_total}s' -m 20 $u)"; done
           echo "== page generator"; curl -sSL -m 20 https://prstarpower.com/freda/ | grep -ioE '<meta name="generator"[^>]*>|wp-content|squarespace|wix|godaddy|webflow|shopify|github' | sort -u | head || true
 
