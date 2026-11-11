@@ -524,6 +524,28 @@ def newsroom():
   <hr class="heavy-rule">
 </div></section>
 
+<section style="padding-bottom:clamp(40px,6vw,70px)"><div class="wrap">
+  <a href="editorial-rush-to-publish-skvlk-fest.html" style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:0;background:var(--night-2);border-top:4px solid var(--gold-2);text-decoration:none;color:var(--ivory)" class="feat-ed">
+    <img src="assets/editorial-rush-to-publish.jpg" alt="Get it right. Then get it first." style="width:100%;height:100%;object-fit:cover;display:block">
+    <div style="padding:clamp(24px,3vw,44px);display:grid;gap:14px;align-content:center">
+      <p class="label" style="color:var(--gold-2)">Editorial &middot; The Newsroom Table &middot; Nov. 11, 2026</p>
+      <h2 style="font-size:clamp(2rem,3.6vw,3rem);line-height:1.05">Get It Right, <i style="color:var(--gold-2)">Then</i> Get It First.</h2>
+      <p style="font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--ivory-2)">What the SKVLK Fest &ldquo;stabbing&rdquo; story should teach every newsroom. By Terry Bryant, Senior Public Relations Specialist, with the HTA newsroom.</p>
+      <p style="font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-1)">Read the editorial &rarr;</p>
+    </div>
+  </a>
+  <style>@media (max-width:820px){{.feat-ed{{grid-template-columns:1fr!important}}}}</style>
+</div></section>
+
+<section style="padding-bottom:clamp(40px,6vw,70px)"><div class="wrap">
+  <p class="label">Press releases on file</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;margin-top:16px;background:rgba(238,232,220,.15)">
+    <a href="https://prstarpower.com/statement-skvlk-fest-2026.html" target="_blank" rel="noopener" style="background:var(--night);padding:26px;display:grid;gap:10px;text-decoration:none;color:var(--ivory)"><img src="assets/skvlk-2026-release.jpg" alt="SKVLK Fest 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover"><span class="label" style="color:var(--gold-2)">Nov. 10, 2026 &middot; SKVLK Fest</span><span style="font-family:var(--serif);font-size:1.35rem;line-height:1.25">Sheriff&rsquo;s Investigation Finds No Stabbing at Jamie Foxx&rsquo;s SKVLK Fest Halloween Party</span></a>
+    <a href="https://newswirehollywood.com/pr-agff-2026-global-film-awards-tonight.html" target="_blank" rel="noopener" style="background:var(--night);padding:26px;display:grid;gap:10px;text-decoration:none;color:var(--ivory)"><img src="assets/agff-2026-release.jpg" alt="Authentic Global Film Festival 2026" style="width:100%;aspect-ratio:16/9;object-fit:cover"><span class="label" style="color:var(--gold-2)">Nov. 5, 2026 &middot; Authentic Global Film Festival</span><span style="font-family:var(--serif);font-size:1.35rem;line-height:1.25">Richard T. Jones Hosts the 2026 Global Film Awards in Beverly Hills</span></a>
+    <a href="#lounge-launch" style="background:var(--night);padding:26px;display:grid;gap:10px;text-decoration:none;color:var(--ivory)"><img src="assets/lady-justice.jpg" alt="HTA &amp; Associates" style="width:100%;aspect-ratio:16/9;object-fit:cover"><span class="label" style="color:var(--gold-2)">Oct. 6, 2026 &middot; HTA &amp; Associates</span><span style="font-family:var(--serif);font-size:1.35rem;line-height:1.25">HTA &amp; Associates Opens The Legal Lounge and Launches Its Press &amp; Newsroom</span></a>
+  </div>
+</div></section>
+
 <section style="padding-bottom:clamp(72px,10vw,140px)"><div class="wrap news">
   <article class="release" id="lounge-launch">
     <p class="label">Press release · For immediate release</p>
@@ -545,6 +567,91 @@ def newsroom():
   <div class="ink"><p class="label">Investigations desk</p><h3>Original reporting, coming soon.</h3><p class="muted">When a story deserves more than a headline, our investigations desk takes it on. Tips are held in confidence: {EMAIL}</p></div>
   <div class="ox"><p class="label">Media inquiries</p><h3>Press and interviews.</h3><p>For comment, interviews or our releases, write to {EMAIL} with “Press” in the subject line.</p></div>
 </section>
+""" + FOOT
+
+
+# ---------------------------------------------------------------- EDITORIAL
+EDIT_SLUG = "editorial-rush-to-publish-skvlk-fest.html"
+EDIT_CSS = """
+.ed-hero{position:relative;padding:0}
+.ed-hero img{width:100%;height:auto;display:block;max-height:78vh;object-fit:cover}
+.ed{max-width:68ch;margin:0 auto;padding:clamp(40px,6vw,80px) 0 clamp(72px,10vw,140px);display:grid;gap:20px}
+.ed .kick{font-family:var(--body);font-size:.78rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-2)}
+.ed h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1}
+.ed h1 i{color:var(--gold-2)}
+.ed .dek{font-family:var(--serif);font-style:italic;font-size:1.55rem;line-height:1.4;color:var(--ivory-2)}
+.ed .by{font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-1);border-top:1px solid rgba(238,232,220,.18);border-bottom:1px solid rgba(238,232,220,.18);padding:14px 0}
+.ed .by span{display:block;color:#9d968a;letter-spacing:.04em;text-transform:none;margin-top:4px}
+.ed p{font-family:var(--serif);font-size:1.32rem;line-height:1.6;color:var(--ivory)}
+.ed p.first::first-letter{font-family:'Abril Fatface',serif;float:left;font-size:4.4em;line-height:.8;padding:8px 12px 0 0;color:var(--gold-2)}
+.ed h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:22px;color:var(--ivory)}
+.ed blockquote{border-left:4px solid var(--oxblood);padding:6px 0 6px 22px;font-family:var(--serif);font-style:italic;font-size:1.7rem;line-height:1.35;color:var(--gold-1)}
+.ed ol{display:grid;gap:12px;padding-left:1.3em;font-family:var(--serif);font-size:1.28rem;line-height:1.5}
+.ed ol b{color:var(--gold-1)}
+.ed .facts{background:var(--night-2);border-top:4px solid var(--gold-2);padding:22px 24px;display:grid;gap:10px;font-size:1rem}
+.ed .facts b{color:var(--gold-1);font-weight:600}
+.ed .note{font-size:.92rem;color:#9d968a;border-top:1px solid rgba(238,232,220,.18);padding-top:16px;line-height:1.55}
+.ed a{color:var(--gold-1);text-decoration:underline;text-underline-offset:3px}
+"""
+
+def editorial():
+    title = "Get It Right, Then Get It First: What the SKVLK Fest Story Should Teach Every Newsroom"
+    desc = "A dispatch call became a worldwide headline. The Sheriff's finding is still catching up. An editorial on accuracy, accountability and the business of the unverified headline."
+    art = {"@context": "https://schema.org", "@type": "OpinionNewsArticle", "headline": title, "description": desc,
+           "datePublished": "2026-11-11", "image": [SITE + "assets/editorial-rush-to-publish.jpg"],
+           "author": {"@type": "Person", "name": "Terry Bryant"}, "publisher": {"@type": "Organization", "name": "HTA & Associates", "url": SITE},
+           "mainEntityOfPage": SITE + EDIT_SLUG}
+    h = head(title + " | HTA &amp; Associates", desc, EDIT_SLUG, EDIT_CSS)
+    h = h.replace(SITE + "assets/lady-justice.jpg", SITE + "assets/editorial-rush-to-publish.jpg").replace('<meta property="og:type" content="website">', '<meta property="og:type" content="article">')
+    h = h.replace("</head>", '<script type="application/ld+json">' + json.dumps(art) + "</script>\n</head>")
+    return h + bar("newsroom.html") + f"""
+<section class="ed-hero"><img src="assets/editorial-rush-to-publish.jpg" alt="Get it right. Then get it first. An HTA &amp; Associates editorial."></section>
+<article class="wrap"><div class="ed">
+  <p class="kick">Editorial &middot; The Newsroom Table &middot; Nov. 11, 2026</p>
+  <h1>Get It Right, <i>Then</i> Get It First.</h1>
+  <p class="dek">A dispatch call became a worldwide headline in a day. The Sheriff&rsquo;s finding is still catching up. What the SKVLK Fest &ldquo;stabbing&rdquo; story should teach every newsroom.</p>
+  <p class="by">By Terry Bryant, Senior Public Relations Specialist, with the HTA &amp; Associates newsroom<span>Commentary. Disclosure below.</span></p>
+
+  <p class="first">On Saturday night, Nov. 7, Jamie Foxx and his family opened their Hidden Valley home for SKVLK Fest, the Halloween music festival his daughter Anelise created, on the night she celebrated her 18th birthday. Thousands of young people came. Organizers put the crowd at 25,000; the Sheriff&rsquo;s Office estimated 3,000 or more.</p>
+  <p>By the next day, the internet was telling a different story. &ldquo;1 person stabbed in neck during Halloween party at Jamie Foxx&rsquo;s mansion,&rdquo; read a KTLA headline credited to TMZ. Within hours the claim was everywhere, syndicated, aggregated and shared.</p>
+  <p>On Nov. 9, Ventura County Sheriff&rsquo;s detectives interviewed the young man at the center of it. Their finding: he &ldquo;was not assaulted with a knife.&rdquo; His superficial injury, the Sheriff&rsquo;s Office says, appears to come from &ldquo;mutual combat / simple battery,&rdquo; a scuffle between teenagers.</p>
+  <blockquote>No knife. No stabbing. And yet the headline is still out there.</blockquote>
+
+  <h2>A dispatch call is not a finding</h2>
+  <p>According to the Sheriff&rsquo;s Office, the first account came from calls to dispatch alleging that one juvenile had slashed another. A dispatch call is someone&rsquo;s first, frightened description of a chaotic moment. It is a lead. It is not a fact.</p>
+  <p>I was trained as a journalist, and the first rule they drill into you is simple: confirm before you publish, and when you can&rsquo;t confirm, say exactly what you don&rsquo;t know. &ldquo;Deputies responded to a reported altercation&rdquo; is a true sentence. &ldquo;Person stabbed in the neck&rdquo; was not. The difference between those two sentences is the difference between reporting and rumor.</p>
+
+  <h2>Words carry weight</h2>
+  <p>&ldquo;Stabbed in the neck&rdquo; is not a neutral phrase. It implies a weapon, intent and a violent crime, at a family&rsquo;s home, at a young woman&rsquo;s birthday party. It tied the name of an Academy Award winner with a decades-long career to a crime that, according to the agency that investigated it, did not happen. Worse, it placed a teenager at the center of an accusation of armed violence. Those are heavy allegations to publish without the facts.</p>
+
+  <h2>The click pays on day one. The correction doesn&rsquo;t.</h2>
+  <p>Here is the uncomfortable economics. A sensational headline earns its traffic the day it runs. The correction, if it ever comes, earns almost nothing. By the time the facts arrive, the story has been shared, monetized and archived in search results. The outlet keeps the revenue. The family keeps the damage. In a world where anyone can publish anything in seconds, that model rewards the fastest guess over the truest account, and it is the people in the headline who pay for it.</p>
+
+  <h2>The law does not reward the shortcut</h2>
+  <p>Some general background, not legal advice. Defamation is a false statement of fact that harms someone&rsquo;s reputation. Public figures like Jamie Foxx must show &ldquo;actual malice,&rdquo; meaning the publisher knew a statement was false or acted with reckless disregard for whether it was true. That high bar is a good thing: a free press needs room for honest mistakes. But private people, including a teenager, face a far lower bar. And an outlet that learns the truth and leaves the false version standing is choosing a risk.</p>
+  <p>California&rsquo;s retraction law, Civil Code section 48a, gives anyone who is defamed in a newspaper or broadcast 20 days to demand a correction, and it rewards outlets that correct promptly and prominently. The goal is not a lawsuit. The goal is a record that is true.</p>
+
+  <h2>Five rules for the next viral night</h2>
+  <ol>
+    <li><b>A dispatch call is a lead, not a fact.</b> Report it as a report, with its source.</li>
+    <li><b>Attribute everything,</b> and say plainly what is not yet known.</li>
+    <li><b>Never build a crime story around a minor</b> on an unconfirmed account.</li>
+    <li><b>Call the family&rsquo;s representative before you publish,</b> and wait for the answer.</li>
+    <li><b>When the facts change, change the headline,</b> not just a line at the bottom.</li>
+  </ol>
+
+  <h2>Accuracy cuts both ways</h2>
+  <p>Fairness matters here too. The Sheriff&rsquo;s Office is still investigating two separate altercations that night, and no one should minimize anyone who was hurt. That is exactly the point. The truth is specific: there were scuffles under investigation, and there was no stabbing. Readers deserve the specific truth, not the most clickable version of it.</p>
+  <p>The Sheriff&rsquo;s Office has done its job. Now it&rsquo;s the newsrooms&rsquo; turn. To TMZ, to KTLA and to every outlet that ran the stabbing claim: update the headline, say what changed and say it as loudly as you said the first version. We say this as people who love this business and want it trusted.</p>
+
+  <div class="facts">
+    <p style="font-size:1rem"><b>The record.</b> Ventura County Sheriff&rsquo;s Office, RB# 26-146404: the young man &ldquo;was not assaulted with a knife&rdquo;; injury &ldquo;appears to be from a mutual combat / simple battery.&rdquo; Two separate altercations remain under investigation.</p>
+    <p style="font-size:1rem"><b>Read:</b> <a href="https://local.nixle.com/alert/12829667/" target="_blank" rel="noopener">The Sheriff&rsquo;s release</a> &middot; <a href="https://prstarpower.com/statement-skvlk-fest-2026.html" target="_blank" rel="noopener">The official SKVLK Fest press release</a></p>
+  </div>
+
+  <p class="note"><strong>Disclosure:</strong> Terry Bryant is a spokesperson for SKVLK Fest through PR STARPOWER, which represents the festival. This is commentary. It is general information, not legal advice; HTA &amp; Associates is not a law firm. For a defamation question, consult a licensed attorney.</p>
+  <p><a href="newsroom.html">&larr; Back to the Newsroom</a></p>
+</div></article>
 """ + FOOT
 
 # ---------------------------------------------------------------- LEGAL
@@ -573,10 +680,11 @@ FAVICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect wi
 
 if __name__ == "__main__":
     os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
-    pages = {"index.html": home(), "lounge.html": lounge(), "newsroom.html": newsroom(), "legal.html": legal()}
+    pages = {"index.html": home(), "lounge.html": lounge(), "newsroom.html": newsroom(), "legal.html": legal(), EDIT_SLUG: editorial()}
     for name, src in pages.items():
         open(os.path.join(OUT, name), "w").write(src)
     open(os.path.join(OUT, "assets", "favicon.svg"), "w").write(FAVICON)
     shutil.copy(os.path.join(HERE, "assets", "hta.css"), os.path.join(OUT, "assets", "hta.css"))
-    shutil.copy(os.path.join(HERE, "assets", "lady-justice.jpg"), os.path.join(OUT, "assets", "lady-justice.jpg"))
+    for f in ("lady-justice.jpg", "editorial-rush-to-publish.jpg", "editorial-rush-to-publish-ig.jpg", "skvlk-2026-release.jpg", "agff-2026-release.jpg"):
+        shutil.copy(os.path.join(HERE, "assets", f), os.path.join(OUT, "assets", f))
     print("built", list(pages))
